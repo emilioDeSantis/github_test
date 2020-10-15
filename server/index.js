@@ -1,53 +1,7 @@
 //import js libraries
 const express = require('express')
-const body_parser = require('body-parser')
-const path = require('path')
-// const uuidv4 = require('uuid/v4')
-// const AWS = require('aws-sdk')
 
 
-
-// AWS.config.update.({region: "us-east-1"})
-// const dynamodb = new AWS.DynamoDB.DocumentClient()
-
-//create a chef
-// var params = {
-//   TableName : 'dynamo-test',
-//   Item: {
-//      HashKey: 'haskey',
-//      NumAttribute: 1,
-//      BoolAttribute: true,
-//      ListAttribute: [1, 'two', false],
-//      MapAttribute: { foo: 'bar'},
-//      NullAttribute: null
-//   }
-// };
-
-// var documentClient = new AWS.DynamoDB.DocumentClient();
-//
-// documentClient.put(params, function(err, data) {
-//   if (err) console.log(err);
-//   else console.log(data);
-// });
-
-//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////
 
 
 //set up port and node environment
@@ -71,8 +25,5 @@ app.listen(PORT,()=>{
   console.log(`Server running at: localhost:${PORT}`);
 })
 
-// import APIs
-const account_api = require('./api/account')
-app.use('/account',account_api)
 
 module.exports = app
